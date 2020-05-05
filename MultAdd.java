@@ -1,4 +1,4 @@
-public class Multadd {
+public class MultAdd {
     
     public static double multAdd(double a, double b, double c){
       double result = a * b + c;
