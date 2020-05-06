@@ -1,0 +1,48 @@
+package chapter3;
+
+import java.util.Scanner;
+
+public class Triangle {
+
+    public static void main(String args[]) {
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter A: ");
+	if (!in.hasNextDouble()) {
+	    System.err.println("Input has to be a number greater than 0!");
+	    return;
+	}
+	double a = in.nextDouble();
+	if (a <= 0) {
+	    System.err.println("Input has to be a number greater than 0!");
+	    return;
+	}
+	
+	System.out.print("Enter B: ");
+	if (!in.hasNextDouble()) {
+	    System.err.println("Input has to be a number greater than 0!");
+	    return;
+	}
+	double b = in.nextDouble();
+	if (b <= 0) {
+	    System.err.println("Input has to be a number greater than 0!");
+	    return;
+	}
+
+	System.out.print("Enter C: ");
+	if (!in.hasNextDouble()) {
+	    System.err.println("Input has to be a number greater than 0!");
+	    return;
+	}
+	double c = in.nextDouble();
+	if (c <= 0) {
+	    System.err.println("Input has to be a number greater than 0!");
+	    return;
+	}
+	
+	if (a > b + c || b > a + c || c > a + b) {
+	    System.out.println("It cannot form a triangle!");
+	} else {
+	    System.out.println("It can form a triangle!");
+	}
+    }
+}
